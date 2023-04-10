@@ -1,0 +1,9 @@
+Download source .tar.gz into the SOURCES folder
+
+[soumil@fedora SPECS]$ pyp2spec setuptools
+...
+[soumil@fedora SPECS]$ rpmbuild -ba python-setuptools.spec
+...
+[soumil@fedora SPECS]$ cd
+[soumil@fedora ~]$ cd rpmbuild/RPMS/noarch
+[soumil@fedora noarch]$ sudo dnf install python3-setuptools-67.6.1-1.fc36.noarch.rpm
